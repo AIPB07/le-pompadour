@@ -6,6 +6,14 @@
     font-family: 'Playfair Display';
 }
 
+.logo-banner {
+    img {
+        width: 200px;
+        height: auto;
+        margin-bottom: -20px;
+    }
+}
+
 // Reduce container margin on XS screens
 @media (max-width: 576px) {
     .page-section {

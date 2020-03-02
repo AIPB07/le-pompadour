@@ -1,6 +1,12 @@
 .modal-content {
     background-color: $blueCharcoal;
 
+    span {
+        font-family: 'Open Sans';
+        color: $white;
+        font-weight: bold;
+    }
+
     p {
         font-size: 0.9em;
         font-family: 'Open Sans';
@@ -22,28 +28,29 @@
         text-align: center;
     }
 
-    dl {
-        width: 100%;
-        margin-bottom: 0px !important;
-        font-family: 'Open Sans';
-        color: $white;
-        overflow: hidden;
-        white-space: nowrap;
-    }
-    dt {
-        float: left;
-        width: 90%;
-        overflow: hidden;
-        white-space: nowrap;
-    }
-    dd {
-        float: left;
-        overflow: hidden;
-        white-space: nowrap;
-    }
-    dt span:after {
-        // content: " ..................................................................................";
-        content: "                                                                                    ";
-        white-space: nowrap;
-    }
+    // To add dots between list item and price
+    // dl {
+    //     width: 100%;
+    //     margin-bottom: 0px !important;
+    //     font-family: 'Open Sans';
+    //     color: $white;
+    //     overflow: hidden;
+    //     white-space: nowrap;
+    // }
+    // dt {
+    //     float: left;
+    //     width: 90%;
+    //     overflow: hidden;
+    //     white-space: nowrap;
+    // }
+    // dd {
+    //     float: left;
+    //     overflow: hidden;
+    //     white-space: nowrap;
+    // }
+    // dt span:after {
+    //     content: " ..................................................................................";
+    //     content: "                                                                                    ";
+    //     white-space: nowrap;
+    // }
 }

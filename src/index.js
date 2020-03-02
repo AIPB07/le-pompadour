@@ -6,9 +6,10 @@ import serviceHair from '../src/img/person-combing.jpg';
 import serviceBeard from '../src/img/beard.jpg';
 import serviceDiscount from '../src/img/boy-cut.jpg';
 import welcomeLogo from '../src/img/el-pompodour-5_2';
+import welcomeLogo2 from '../src/img/el-pompodour-4_2';
 import pompadourWoman from '../src/img/pompadour-woman';
 import barberPole from '../src/img/barber-pole-gold';
-import goldMotif from '../src/img/gold-motif2';
+import '../src/img/favicon';
 
 // Import stylesheets
 import '../src/styles/app';
@@ -16,7 +17,10 @@ import '../src/styles/app';
 // Set image src attributes
 
 var navbarBrandImg = document.getElementById('navbarBrand');
-navbarBrandImg.src = navbarBrand;
+navbarBrandImg.src = welcomeLogo2;
+
+var navbarLogoImg = document.getElementById('navbarLogo');
+navbarLogoImg.src = navbarBrand;
 
 var heroLeftImg = document.getElementById('heroLeft');
 heroLeftImg.src = heroLeft;
@@ -59,15 +63,6 @@ beardBarberPoleImg.src = barberPole;
 
 var discountBarberPoleImg = document.getElementById('discountBarberPole');
 discountBarberPoleImg.src = barberPole;
-
-// var testimonialLogoImg = document.getElementById('testimonialLogo');
-// testimonialLogoImg.src = welcomeLogo;
-
-// var tarporleyLogoImg = document.getElementById('tarporleyLogo');
-// tarporleyLogoImg.src = welcomeLogo;
-
-// var sandbachLogoImg = document.getElementById('sandbachLogo');
-// sandbachLogoImg.src = goldMotif;
 
 
 
