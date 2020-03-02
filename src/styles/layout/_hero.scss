@@ -130,12 +130,19 @@
     visibility: hidden;
 }
 
-// #tarporleyLink:hover {
-//     opacity: 0.6;
-//     div {
-//         visibility: visible;
-//     }
-// }
+#tarporleyLink:hover,
+#sandbachLink:hover {
+    img {
+        opacity: 0.6;
+    }
+    div {
+        visibility: visible;
+    }
+}
+
+.no-hover {
+    pointer-events: none;
+}
 
 // XS screens
 @media (max-width: 576px) {

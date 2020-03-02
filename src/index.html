@@ -56,11 +56,10 @@
                         <div id="sandbachLabel">Sandbach</div>
                     </a>
                 </div>
+
                 <div class="hero-text hero-text-1">Welcome</div>
                 <div class="hero-text hero-text-2">to</div>
-                <!-- <div class="hero-text hero-img"> -->
-                    <img id="heroLogo" class="hero-text hero-img">
-                <!-- </div> -->
+                <img id="heroLogo" class="hero-text hero-img">
                 <div class="hero-text hero-text-3">Need a trim?</div>
                 <div class="hero-text hero-text-4">Pick a branch...</div>
                 
@@ -524,33 +523,51 @@
             //     })
 
             // Add event listener for end of intro animation
-            heroRight.addEventListener("animationend", function() {
-                // if (window.USER_IS_TOUCHING) {
-                //     addTouchEventListeners();
-                // } else {
-                    // Add event listeners for mouse on/off left panel
-                    tarporleyLink.addEventListener("mouseover", function leftMouseOver() {
-                        $("#heroLeft").animate({opacity: 0.6});
-                        $("#tarporleyLabel").animate({opacity: 1});
-                        $("#tarporleyLabel").css("visibility", "visible");
-                    })
-                    tarporleyLink.addEventListener("mouseleave", function leftMouseLeave() {
-                        $("#heroLeft").animate({opacity: 1});
-                        $("#tarporleyLabel").animate({opacity: 0});
-                    })
-                    // Add event listeners for mouse on/off right panel
-                    sandbachLink.addEventListener("mouseover", function rightMouseOver() {
-                        $("#heroRight").animate({opacity: 0.6});
-                        $("#sandbachLabel").animate({opacity: 1});
-                        $("#sandbachLabel").css("visibility", "visible");
-                    })
-                    sandbachLink.addEventListener("mouseleave", function rightMouseLeave() {
-                        $("#heroRight").animate({opacity: 1});
-                        $("#sandbachLabel").animate({opacity: 0});
-                    })
-                    window.MOUSE_EVENT_LISTENERS = true;
-                // }
-            });
+            // heroRight.addEventListener("animationend", function() {
+            //     // if (window.USER_IS_TOUCHING) {
+            //     //     addTouchEventListeners();
+            //     // } else {
+            //         // Add event listeners for mouse on/off left panel
+            //         tarporleyLink.addEventListener("mouseover", function leftMouseOver() {
+            //             $("#heroLeft").animate({opacity: 0.6});
+            //             $("#tarporleyLabel").animate({opacity: 1});
+            //             $("#tarporleyLabel").css("visibility", "visible");
+            //         })
+            //         tarporleyLink.addEventListener("mouseleave", function leftMouseLeave() {
+            //             $("#heroLeft").animate({opacity: 1});
+            //             $("#tarporleyLabel").animate({opacity: 0});
+            //         })
+            //         // Add event listeners for mouse on/off right panel
+            //         sandbachLink.addEventListener("mouseover", function rightMouseOver() {
+            //             $("#heroRight").animate({opacity: 0.6});
+            //             $("#sandbachLabel").animate({opacity: 1});
+            //             $("#sandbachLabel").css("visibility", "visible");
+            //         })
+            //         sandbachLink.addEventListener("mouseleave", function rightMouseLeave() {
+            //             $("#heroRight").animate({opacity: 1});
+            //             $("#sandbachLabel").animate({opacity: 0});
+            //         })
+            //         window.MOUSE_EVENT_LISTENERS = true;
+            //     // }
+            // });
+            
+            $(document).ready(function() {
+                $("#tarporleyLink").addClass("no-hover");
+                $("#sandbachLink").addClass("no-hover");
+                // Get a panel
+                var heroRight = document.getElementById("heroRight");
+                // Add event listener for end of intro animation
+                heroRight.addEventListener("animationend", function() {
+                    // Remove welcome message from DOM
+                    $(".hero-text").remove();
+                    $("#tarporleyLink").removeClass("no-hover");
+                    $("#sandbachLink").removeClass("no-hover");
+                })
+
+            })
+            // Remove welcome message from dom
+            // $(".hero-text").remove();
+
 
         </script>
 
