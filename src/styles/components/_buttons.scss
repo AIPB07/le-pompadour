@@ -1,0 +1,19 @@
+.absolute-buttons {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: -3.2em;
+    z-index: 2;
+}
+
+.btn-primary {
+    border-radius: 0px;
+    border: none !important;
+    color: $white !important;
+    background-color: $red;
+}
+
+.btn-primary:hover {
+    background-color: $darkRed !important;
+}

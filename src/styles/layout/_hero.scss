@@ -1,0 +1,169 @@
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes selector-fade-in {
+    0% {
+        opacity: 0.08;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hover-fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
+
+.hover-fade {
+    animation-name: hover-fade-out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+
+.store-selector {
+    padding: 0;
+}
+
+#heroLeft {
+    animation-name: selector-fade-in;
+    animation-duration: 1s,;
+    animation-delay: 7s;
+    animation-fill-mode: backwards;
+    border-right: 1px solid $white;
+}
+
+#heroRight {
+    animation-name: selector-fade-in;
+    animation-duration: 1s;
+    animation-delay: 7s;
+    animation-fill-mode: backwards;
+    border-left: 1px solid $white;
+}
+
+.hero-text {
+    animation-name: fade-in, fade-out;
+    animation-duration: 2s, 1.5s;
+    animation-fill-mode: forwards, forwards;
+    color: $charcoal;
+    opacity: 0;
+    font-family: 'Playfair Display';
+    font-size: 5em;
+    position: absolute;
+    left: 50%;
+}
+
+.hero-text-1 {
+    animation-delay: 0.5s, 3s;
+    margin-left: -162px;
+    margin-top: 100px;
+}
+
+.hero-text-2 {
+    animation-delay: 0.5s, 3s;
+    margin-left: -36px;
+    margin-top: 180px;
+}
+
+.hero-img {
+    animation-delay: 1.5s, 6.5s;
+    margin-left: -179px;
+    margin-top:280px;
+}
+
+.hero-text-3 {
+    animation-delay: 4.5s, 6.5s;
+    margin-top: 100px;
+    margin-left: -137px;
+    font-size: 3em;
+}
+
+.hero-text-4 {
+    animation-delay: 4.5s, 6.5s;
+    margin-top: 180px;
+    margin-left: -164px;
+    font-size: 3em;
+}
+
+#tarporleyLabel {
+    color:$charcoal;
+    font-family: 'Playfair Display';
+    font-size: 5em;
+    position: absolute;
+    margin-top: -60px;
+    top: 50%;
+    left: 50%;
+    margin-left: -175px;
+    visibility: hidden;
+}
+
+#sandbachLabel {
+    color: $charcoal;
+    font-family: 'Playfair Display';
+    font-size: 5em;
+    position: absolute;
+    top: 50%;
+    margin-top: -60px;
+    left: 50%;
+    margin-left: -174px;
+    visibility: hidden;
+}
+
+#tarporleyLink:hover {
+    opacity: 0.6;
+    div {
+        visibility: visible;
+    }
+}
+
+// XS screens
+@media (max-width: 576px) {
+    #tarporleyLabel {
+        font-size: 4em;
+        margin-left: -140px;
+    }
+    #sandbachLabel {
+        font-size: 4em;
+        margin-left: -139px;
+    }
+    .hero-text-1 {
+        font-size: 3.5em;
+        margin-left: -113px;
+    }
+    .hero-text-2 {
+        font-size: 3.5em;
+        margin-left: -25px;
+    }
+    .hero-img {
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 7%;
+        right: 0;
+    }
+    .hero-text-4 {
+        font-size: 2.5em;
+        margin-left: -137px;
+    }
+}

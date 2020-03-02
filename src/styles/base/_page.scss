@@ -1,0 +1,15 @@
+.page-section {
+    padding: 4em;
+}
+
+.section-header {
+    font-family: 'Playfair Display';
+}
+
+// Reduce container margin on XS screens
+@media (max-width: 576px) {
+    .page-section {
+       padding-left: 0em;
+       padding-right: 0em;
+    }
+}

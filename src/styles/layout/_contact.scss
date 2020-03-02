@@ -1,0 +1,127 @@
+#tarporley {
+    background-color: $charcoal;
+    color: $white;
+
+    // XS and small screens
+    .tarporley-large {
+        font-size: 3em;
+        padding-left: 0px !important;
+    }
+
+    // Large screens and above
+    @media (min-width: 992px) {
+        .tarporley-large {
+            font-size: 5em;
+            padding-left: 0.6em !important;
+        }
+    }
+
+    // XS, small, medium screens
+    @media (max-width: 992px) {
+        .tarporley-header {
+            padding-left: 0px !important;
+        }
+    }
+
+    // XS, small screens
+    @media (max-width: 768px) {
+        .tarporley-header, .tarporley-large {
+            align-self: center;
+            text-align: center;
+        }
+        #tarporleyLogo {
+            margin-top: 2em;
+        }
+    }
+
+    i {
+        color: $gold;
+        font-size: 1.8em;
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    
+    i:hover {
+        color: $white;
+    }
+    
+    a:focus {
+        outline-color: $white;
+    }
+}
+
+#sandbach {
+    background-color: $white;
+    color: $charcoal;
+    
+    // XS and small screens
+    .sandbach-large {
+        font-size: 2.8em;
+    }
+
+    // Medium screens and above
+    @media (min-width: 992px) {
+        .sandbach-large {
+            font-size: 4.2em;
+            // padding-left: 0.6em !important;
+        }
+    }
+
+    // XS, small screens
+    @media (max-width: 768px) {
+        .sandbach-header, .sandbach-large {
+            align-self: center;
+            text-align: center;
+            margin-right: 0em !important;
+            margin-left: 0em !important;
+            padding-right: 0em !important;
+        }
+        .address {
+            margin-bottom: 2em;
+        }
+        .section-header {
+            align-self: center !important;
+            text-align: center;
+        }
+    }
+
+    i {
+        color: $gold;
+        font-size: 1.8em;
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    
+    i:hover {
+        color: grey;
+    }
+    
+    a:focus {
+        outline-color: $white;
+    }
+}
+
+.map {
+    height: 320px;
+    width: 100%;
+}
+
+.address {
+    font-family: 'Open Sans';
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.opening-hours {
+    font-family: 'Open Sans';
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.social-icons {
+    text-align: center;
+}

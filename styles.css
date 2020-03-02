@@ -1,0 +1,83 @@
+.logo-banner {
+    height: 4rem;
+}
+
+.store-selector {
+    padding: 0;
+}
+
+.navbar {
+    background-color: white;
+}
+
+.card {
+    border-radius: 1px;
+    border: none;
+    /* background-color: #f7f8fa; */
+    background-color: #36454f;
+    z-index: 1;
+    margin-bottom: 2em;
+}
+
+.card-title {
+    padding-top: 0.8em;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.card-img {
+    padding: 1em;
+}
+
+.card-text {
+    /* color: #36454f; */
+    color: white;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2.5em;
+}
+
+.absolute-buttons {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: -3.2em;
+    z-index: 2;
+}
+
+.btn-primary {
+    border-radius: 0px;
+    border: none !important;
+    color: white !important;
+    background-color: rgb(139, 46, 46);
+}
+
+/* Divider with icon/text */
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 1em;
+}
+.divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.7); */
+    border-bottom: 1px solid white;
+}
+.divider::before {
+    margin-right: 0.5em;
+}
+.divider::after {
+    margin-left: 0.5em;
+}
+
+.rounded-circle {
+    max-height: 50vh;
+    padding: 1em;
+}
+
+

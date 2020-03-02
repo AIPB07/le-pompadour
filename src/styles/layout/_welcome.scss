@@ -1,0 +1,38 @@
+#welcome {
+    background-color: $charcoal;
+    color: $white;
+
+    hr {
+        border-top: 1px solid $white; 
+    }
+
+    // XS, small screens
+    @media (max-width: 768px) {
+        h1 {
+            align-self: center;
+            text-align: center;
+        }
+    }
+}
+
+.welcome-body {
+    padding-top: 1em;
+    font-family: 'Open Sans';
+}
+
+#pompadourWoman {
+    height: auto;
+    width: 55%;
+}
+
+// XS and small screens
+.welcome-large {
+    font-size: 1.4em;
+}
+
+// Medium screens and above
+@media (min-width: 768px) {
+    .welcome-large {
+        font-size: 2em;
+    }
+}

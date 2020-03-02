@@ -1,0 +1,22 @@
+// Import fonts
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Open+Sans|Playfair+Display&display=swap');
+
+// Import variables
+@import './base/variables';
+
+// Import base styles
+@import './base/page';
+
+// Import layout styles
+@import './layout/navbar';
+@import './layout/services';
+@import './layout/hero';
+@import './layout/welcome';
+@import './layout/contact';
+@import './layout/testimonials';
+@import './layout/footer';
+
+// Import components styles
+@import './components/buttons';
+@import './components/modal';
+
