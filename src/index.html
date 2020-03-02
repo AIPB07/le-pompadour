@@ -155,7 +155,7 @@
                                 <h1 class="section-header tarporley-header" style="font-style: italic;" data-aos="fade-right">Come into our</h1>
                                 <h1 class="section-header tarporley-large" data-aos="fade-right">Tarporley</h1>
                                 <h1 class="section-header tarporley-header pl-3" style="font-style: italic;" data-aos="fade-right">branch...</h1>
-                                <div id="tarporleyMap" class="map mt-4 shadow" data-aos="fade-right">Map</div>
+                                <div id="tarporleyMap" class="map mt-4 shadow" data-aos="fade-right"></div>
                             </div>
                         </div>
                         <div class="col-md-6 d-flex flex-column justify-content-around align-items-center">
@@ -193,7 +193,7 @@
                                 <h1 class="sandbach-header ml-auto pr-5" style="font-style: italic;" data-aos="fade-left">Or find us in</h1>
                                 <h1 class="sandbach-large ml-auto" data-aos="fade-left">Sandbach...</h1>
                             </div>
-                                <div id="sandbachMap" class="map shadow" data-aos="fade-left">Map</div>
+                                <div id="sandbachMap" class="map shadow" data-aos="fade-left"></div>
                         </div>
                         <div class="col-md-6 order-md-1 d-flex flex-column justify-content-around align-items-center">
                             <div>
@@ -474,18 +474,18 @@
         
         <script>
             // Initialise maps
-            // function initMaps() {
-            //     var tarporley = {lat: 53.156633, lng: -2.667090};
-            //     var sandbach = {lat: 53.148835, lng: -2.369267};
-            //     var tarporleyMap = new google.maps.Map(
-            //         document.getElementById('tarporleyMap'), {zoom: 16, center: tarporley}
-            //         );
-            //     var sandbachMap = new google.maps.Map(
-            //         document.getElementById('sandbachMap'), {zoom: 17, center: sandbach}
-            //         );
-            //     var tarporleyMarker = new google.maps.Marker({position: tarporley, map: tarporleyMap});
-            //     var sandbachMarker = new google.maps.Marker({position: sandbach, map: sandbachMap});
-            // }
+            function initMaps() {
+                var tarporley = {lat: 53.156633, lng: -2.667090};
+                var sandbach = {lat: 53.148835, lng: -2.369267};
+                var tarporleyMap = new google.maps.Map(
+                    document.getElementById('tarporleyMap'), {zoom: 16, center: tarporley}
+                    );
+                var sandbachMap = new google.maps.Map(
+                    document.getElementById('sandbachMap'), {zoom: 17, center: sandbach}
+                    );
+                var tarporleyMarker = new google.maps.Marker({position: tarporley, map: tarporleyMap});
+                var sandbachMarker = new google.maps.Marker({position: sandbach, map: sandbachMap});
+            }
             
             $(document).ready(function() {
                 $("#tarporleyLink").addClass("no-hover");
@@ -528,9 +528,9 @@
         </script>
 
         <!-- Load Google Maps API -->
-        <!-- <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=<MAPS_API_KEY>&callback=initMaps">
-        </script> -->
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzUQTrwtb0K_F7U7dFTYgSLWwHF6EwP98&callback=initMaps">
+        </script>
 
     
     </body>
