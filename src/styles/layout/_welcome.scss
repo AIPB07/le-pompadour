@@ -1,74 +1,3 @@
-// #welcome {
-//     background-color: $charcoal;
-//     color: $white;
-
-//     hr {
-//         border-top: 1px solid $white; 
-//     }
-
-//     // XS, small, med screens
-//     @media (max-width: 992px) {
-//         h1 {
-//             align-self: center;
-//             text-align: center;
-//         }
-//     }
-// }
-
-// .welcome-body {
-//     padding-top: 1em;
-//     // padding-bottom: 2em;
-//     font-family: 'Open Sans';
-// }
-
-// .story-body {
-//     font-family: 'Open Sans';
-//     padding-top: 1em;
-//     text-align: center;
-// }
-
-// #pompadourWoman {
-//     height: 300px;
-//     width: auto;
-//     padding-top: 1em;
-// }
-
-// #welcomeLogo {
-//     padding-top: 1em;
-// }
-
-// // XS and small screens
-// .welcome-large {
-//     font-size: 3em;
-// }
-
-// .welcome-reg {
-//     font-style: italic;
-// }
- 
-// // Medium screens and above
-// @media (min-width: 768px) {
-//     .welcome-large {
-//         font-size: 2em;
-//     }
-//     #pompadourWoman {
-//         height: 350px;
-//     }
-//     .welcome.logo {
-//         padding-top: 0em;
-//     }
-// }
-// // Large screens and above
-// @media (min-width: 992px) {
-//     #pompadourWoman {
-//         height: 400px;
-//     }
-// }
-
-
-
-
-
 #welcome {
     background-color: $charcoal;
     color: $white;
@@ -94,7 +23,6 @@
 #pompadourWoman {
     height: 300px;
     width: auto;
-    // padding-top: 1em;
 }
 
 // XS and small screens
