@@ -31,6 +31,12 @@ heroRightImg.src = heroRight;
 var heroLogoImg = document.getElementById('heroLogo');
 heroLogoImg.src = welcomeLogo;
 
+var welcomeLogoImg = document.getElementById('welcomeLogo');
+welcomeLogoImg.src = welcomeLogo;
+
+var pompadourWomanImg = document.getElementById('pompadourWoman');
+pompadourWomanImg.src = pompadourWoman;
+
 var serviceHairImg = document.getElementById('serviceHair');
 serviceHairImg.src = serviceHair;
 
@@ -39,12 +45,6 @@ serviceBeardImg.src = serviceBeard;
 
 var serviceDiscountImg = document.getElementById('serviceDiscount');
 serviceDiscountImg.src = serviceDiscount;
-
-var welcomeLogoImg = document.getElementById('welcomeLogo');
-welcomeLogoImg.src = welcomeLogo;
-
-var pompadourWomanImg = document.getElementById('pompadourWoman');
-pompadourWomanImg.src = pompadourWoman;
 
 var hairModalTitleImg = document.getElementById('hairModalTitle');
 hairModalTitleImg.src = welcomeLogo;

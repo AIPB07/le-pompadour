@@ -120,8 +120,18 @@
     font-family: 'Open Sans';
     font-size: 1.3em;
     text-align: center;
+    margin-bottom: 0em !important;
 }
 
 .social-icons {
     text-align: center;
+}
+
+@media (max-width: 767.98px) {
+    .address {
+        padding-top: 2em;
+    }
+    .sandbach-large {
+        padding-bottom: 0.5em;
+    }
 }
